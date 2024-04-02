@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(void)
+{
+
+    int x,y;
+    char op;
+    scanf("%d %c %d",&x,&op,&y);
+    switch(op)         //switch는 if문에서 == 와 같다랑 같음. 실수계산 못함
+    {
+        case '+':
+        printf("%d %c %d = %d",x,op,y,x+y); //더한 값 출력     
+        break;
+        case '-':
+        printf("%d %c %d = %d",x,op,y,x-y); //뺀 값 출력
+        break;
+        case '*':
+        printf("%d %c %d = %d",x,op,y,x*y); //곱한 값 출력
+        break;
+        case '/':
+        printf("%d %c %d = %d",x,op,y,x/y); //나눈 값 출력
+        break;
+        case '%':
+        printf("%d %c %d = %d",x,op,y,x%y); //나머지 값 출력
+        break;
+        default:
+        printf("잘못된 계산입니다 다시입력해주세요."); // 위에 값들 중 다른값이 나올시 출력
+        break;
+
+    }
+}
