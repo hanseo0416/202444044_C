@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void)
+{
+
+    int num1,num2,max,min;
+
+    printf("정수 2개를 차례로 입력\n");
+
+    printf("첫 번째 정수 입력:");
+    scanf("%d",&num1);
+    printf("두 번째 정수 입력:");
+    scanf("%d",&num2);
+
+    max = (num1>num2) ? num1 : num2;
+    min = (num1<num2) ? num1 : num2;
+    printf("최대값은 %d입니다,\n최소값은 %d입니다",max,min);
+}
